@@ -29,4 +29,4 @@ jobs:
           file: ./Dockerfile
           platforms: linux/amd64,linux/arm64 # Remember image in dockerfile should also support these platforms
           push: true
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/argocd-applicationset :latest,${{ secrets.DOCKERHUB_USERNAME }}/argocd-applicationset:${{ github.sha }}
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/argocd-applicationset:latest,${{ secrets.DOCKERHUB_USERNAME }}/argocd-applicationset:${{ github.sha }}
